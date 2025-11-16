@@ -1,0 +1,19 @@
+[project]
+name = "to-be-named-backend"
+version = "0.1.0"
+description = "A backend for the d&d lore website"
+authors = [
+    { name = "Tyler Polk", email = "tyedistogamecoc@gmail.com" }
+]
+readme = "README.md"
+keywords = ["python"]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.14"
+fastapi = {extras = ["standard"], version = "^0.121.2"}
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
